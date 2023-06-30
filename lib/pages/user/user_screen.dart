@@ -73,14 +73,7 @@ Widget usuarioActivoScreen(BuildContext context, Datum user) {
             style: TextStyle(fontSize: 18),
           ),
           SizedBox(height: 16),
-          Text(
-            "Email: ${user.email}",
-            style: TextStyle(
-              fontSize: 18,
-              color: Colors.blue,
-              decoration: TextDecoration.underline,
-            ),
-          ),
+          emailField(user.email),
         ],
       ),
     ),
@@ -144,14 +137,7 @@ Widget usuarioInactivoScreen(BuildContext context, Datum user) {
             style: TextStyle(fontSize: 18),
           ),
           SizedBox(height: 16),
-          Text(
-            "Email: ${user.email}",
-            style: TextStyle(
-              fontSize: 18,
-              color: Colors.blue,
-              decoration: TextDecoration.underline,
-            ),
-          ),
+          emailField(user.email),
         ],
       ),
     ),
