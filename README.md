@@ -1,16 +1,18 @@
-# assessment_itti
+# Assessment ITTI
 
-A new Flutter project.
+Test de evaluación técnica.
 
-## Getting Started
+## Flutter version 
 
-This project is a starting point for a Flutter application.
+Se utilizó la versión 3.10.5 de Flutter, la app necesita estar en el rango sdk: '>=3.0.5 <4.0.0'.
 
-A few resources to get you started if this is your first Flutter project:
+## Uso
+Para levantar la aplicación simplemente se necesita correr el siguiente comando en el directorio donde se encuentra el archivo main.dart. 
+```dart
+flutter run
+```
+Se requiere una conexión a internet para las imágenes utilizadas.
+## Datos adicionales
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Se agregó una condición extra al campo de usuario, este deberá ser por lo menos de 3 caracteres para poder acceder a la app.
+El apk de esta aplicación puede ser encontrado en https://drive.google.com/drive/folders/1yNVpVpAPSiAU3sbYSyY_TuqxZr8K2uvo?usp=sharing 
