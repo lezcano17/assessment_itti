@@ -107,28 +107,28 @@ class _HomeScreenState extends State<HomeScreen> {
       },
     );
   }
+}
 
-  Widget emailField(String email) {
-    final mailtoUri = Uri(scheme: 'mailto', path: email);
-    print(mailtoUri);
-    return RichText(
-      text: TextSpan(
-        children: [
-          TextSpan(
-            style: TextStyle(color: Colors.blueGrey),
-            text: email,
-            recognizer: TapGestureRecognizer()
-              ..onTap = () async {
-                if (await canLaunchUrl(mailtoUri)) {
-                  await launchUrl(
-                    mailtoUri,
-                    mode: LaunchMode.externalApplication,
-                  );
-                }
-              },
-          ),
-        ],
-      ),
-    );
-  }
+Widget emailField(String email) {
+  final mailtoUri = Uri(scheme: 'mailto', path: email);
+  print(mailtoUri);
+  return RichText(
+    text: TextSpan(
+      children: [
+        TextSpan(
+          style: TextStyle(color: Colors.blueGrey),
+          text: email,
+          recognizer: TapGestureRecognizer()
+            ..onTap = () async {
+              if (await canLaunchUrl(mailtoUri)) {
+                await launchUrl(
+                  mailtoUri,
+                  mode: LaunchMode.externalApplication,
+                );
+              }
+            },
+        ),
+      ],
+    ),
+  );
 }

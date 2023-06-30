@@ -48,8 +48,9 @@ void goToUserScreen(Datum usuario, int random) {
 }
 
 int randomizer() {
-  Random rng = Random();
+  Random rng = Random(DateTime.now().millisecondsSinceEpoch);
   int randomNumber = 1 + rng.nextInt(100);
+  print(randomNumber);
   if (randomNumber < 20) {
     return 1;
   } else if (randomNumber % 20 == 0) {
